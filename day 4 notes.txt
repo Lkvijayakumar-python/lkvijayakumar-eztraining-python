@@ -1,0 +1,106 @@
+Day 4:-
+
+1.creating new dictionaries from other:
+  
+d={n:n*n for n in range(1,5)}
+print(d)
+{1: 1, 2: 4, 3: 9, 4: 16}
+#calculating product  price for 5 units
+old={"rice":50,"daal":120,"oil":150}
+new={product:price*5 for (product,price)in old.items()}
+print(new)
+{'rice': 250, 'daal': 600, 'oil': 750}
+
+2.creating a directiry using if condition:
+
+real={"pavan":25,"revanth":23,"bharadwaj":24,"kyathi":35}
+new={name:age for(name,age)in real.items() if age<25}
+print(new)
+{'revanth': 23, 'bharadwaj': 24}
+
+Task programs:
+1.create a list with a customer and display dictionary which as customer name along 
+with discounts for them from a particular shop
+
+
+3.type of strings functions:-
+the string we taken s="pavan"
+
+s.upper(): it convert the  given string into uppercase.
+>>> print(s.upper())
+PAVAN
+
+s.lower(): it convert the  given string into lowercase.
+>>> print(s.lower())
+pavan
+
+s.captalisize:it convert the first letter of the string into upper case.
+>>> print(s.capitalize())
+Pavan
+
+s.split():we can split the given string
+>>> print(s.split())
+['pavan']
+s.replace()--replacing one letter with another letter
+ 
+s.strip()
+s.center()
+s.count('a')
+s.count('a',5,len(s))
+s.islower()-->>>CHECKING  ALL LETTERS IS IN SMALL LETTERS ,IF IT IS IT PRINTS "True"
+print(s.islower())
+True
+
+s.isupper()-->>>CHECKING  ALL LETTERS IS IN CAPITAL LETTERS ,IF IT IS IT PRINTS "True"
+print(s.isupper())
+False
+
+s.istitle()-->>>CHECKING  ONLY FIRST  LETTER IS IN CAPITAL LETTER ,IF IT IS IT PRINTS "True"
+print(s.istitle())
+False
+
+max(s)
+min(s)
+s.rfind
+max("abc") is c
+min("abc") is a
+
+mutable and immutable:-
+
+mutable:-it can change after the creation
+*list
+*dictionary
+*sets
+immutable:- it can't change once it created
+
+*int
+a=10
+a
+10
+id(a)
+2482639667728
+a=20
+id(a)
+2482639668048
+
+*float
+b=1.2
+id(b)
+2482675443792
+b=3.8
+id(b)
+2482675443600
+
+*string
+c="pavan"
+id(c)
+2482676756464
+c="bharadwaj"
+id(c)
+2482676817456
+
+*boolean
+*tuple
+
+
+ 
