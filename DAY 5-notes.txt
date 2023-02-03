@@ -1,0 +1,154 @@
+import random as r
+x="i love sweets"
+print(r.sample(x,2))
+
+#every time it gives differnt outputs:
+import random as r
+a=[1,2,3,4,5,6]
+r.shuffle(a)
+print(a)
+a=[1,2,3,4,5,6]
+print(r.choice(a))
+DAY 5:-
+###PYTHON HAS N NUMBER OF MODULES  TO PRACTICE IT###
+b="welcome back"
+print(r.choice(b))
+a=r.random()
+print(a)
+
+#will return random number between 0.0 to 1.0
+#0.0 includes 1.0 excludes
+print(r.random(20,30))
+
+a=[10,20,30,40,50]
+print(r.choices(a,k=10))
+s="hello good day"
+print(r.chpices(s,k=3))
+
+##returns any random number
+##b/w the range include the range values
+#range values
+#float values
+
+### DISPLAY WHOLE YEAR CALENDAR###
+ import calendar
+print("Full calendar")
+print(calendar.calendar(2022))
+print("particular month")
+print(calendar.month(2021,3))
+print("set firstb day of the week")
+calendar.firstweekday(calendar.TUESDAY)
+print(calendar.month(2022,12))
+
+### DISPLAY DATE TIME MODULE
+
+import datetime
+a=datetime.dtetime.now()
+print(a)
+
+
+sv=a.strftime("%Y) #lower case
+fv=a.strftime("%Y) #lupper case
+print("year short version",sv)
+print(year  full version",fv)
+
+## without argument without returned value
+def multi():
+    n1=int(input("Number"))
+    n2=int(input("Number"))
+    n3=int(input("Number"))
+    prod=n1*n2*n3
+    print(prod)
+multi()
+O/P:-
+Number10
+Number20
+Number30
+6000
+
+
+## without argument with returned value
+def multi():
+    n1=int(input("Number"))
+    n2=int(input("Number"))
+    n3=int(input("Number"))
+    prod=n1*n2*n3
+    return(prod)
+res=multi()
+print(res)
+ O/P:-
+Number10
+Number20
+Number30
+6000
+
+
+## with argument with returned value
+def multi(n1,n2,n3):
+    prod=n1*n2*n3
+    print(prod)
+multi(3,4,5)
+O/P:-
+Number10
+Number20
+Number30
+6000
+
+## with argument without returned value
+def multi(a,b,c):
+    prod=a*b*c
+    print(prod)
+n1=int(input("enter Number 1"))
+n2=int(input("enter Number 2"))
+n3=int(input("enter Number 3"))
+multi(n1,n2,n3)
+O/P:-
+Number10
+Number20
+Number30
+6000
+
+### RECURSIVE FUNCTION  ###
+
+# a function which calls itself called recursive function
+def display():
+    n=int(input("enter a number :"))
+    if n==1:
+        display()
+    else:
+        print("over")
+display()
+O/P:
+enter a number :1
+enter a number :1
+enter a number :4
+over
+ ## FIBANOCCI ###
+n=int(input("enter a number: "))
+a=0
+b=1
+sum=0
+count=1
+while(count<=n):
+    print(sum,end=" ")
+    count=count+1
+    a=b
+    b=sum
+    sum=a+b
+O/P:
+enter a number: 12
+0 1 1 2 3 5 8 13 21 34 55 89 
+
+### PRINTING THE SUM OF NUMBERS ###
+#variable length method:
+def sum(*a):
+ c=0
+ for i in a:
+     c=c+i
+ print(c)
+sum(10,2,3,1,2)
+
+O/P:-
+18
+
+ 
