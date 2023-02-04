@@ -1,0 +1,48 @@
+DAY 6:-
+
+>>>EXCEPTION HANDLING<<<<
+-->>when there is exceptionthe doveloper does not want interuption  or disturbance in the program flow to achieve this,in this we are using exception handling
+EXAMPLE:
+a=100
+b=0
+try :
+    print(a/b)
+except Exception as j :
+    print("please note number cannot divided with zero",j)
+print("Bye")
+O/P:-
+please note number cannot divided with zero division by zero
+Bye
+
+>>>>OOPS[object oreinted programming structure]<<<
+-->it is an efficient concept used in all object oriented programming language like JAVA & PYTHON
+-->> for multiple reasons we use oops concepts
+EXAMPLE:-
+code reusibility,data security,hiding data
+PROGRAM
+class computer:
+    def config(self):
+        print("YES")
+
+lenova=computer()  #obj1
+lenova.config()
+dell=computer()
+dell.config()
+
+O/P:-
+YES
+YES
+
+>>>>CLASS<<<<
+it is an blue print
+EXAMPLE:- birds,laptops
+
+>>>>OBJECT<<<<
+it is a thing created based on class
+NOTE:-  one class can have multiple objects
+EXAMPLE 1:-  
+     class--birds
+     object--parrot,peacock
+EXample 2:-
+      class -laptop
+      object-lenova,hp,dell
