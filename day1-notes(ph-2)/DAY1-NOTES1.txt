@@ -1,0 +1,43 @@
+PHASE -II
+>>>LAMBDA FUNCTION<<<
+It is called as a anonymous function when we want to use function concept alone without using function name then we apply concept of lambda function
+>>#Anonymous function
+L = [1,2,3]
+r = map(lambda x:x+x,L)
+print(list(r))
+
+#map _it helps to create iteration ,it returns map
+
+res = map(lambda n:power(n,2),L)
+print(list(res))
+
+name = "sam"
+(lambda name:print(name))(name)
+
+>>4 pillors of OOPS<<
+1.abstraction
+2.encapsulation
+3.inheritance
+4.polymorphism
+2.1)Abstraction
+-->hiding the implementation part,showing where is required for users is called as abstraction.
+   ex:exe file
+  we can make class or method as abstract,opposite to extract is concrete.
+
+2)Encapsulation
+-->Binding data and function into a single entity
+*Public-one class info can be accessed by any       other class(low level data protection)
+*Private-can used where it is declared/no   inheritected class.(medium level)
+*Protected-can be accessed only when it got declared....whichever class is inherited from this class there also we can use.(high level)
+3) INHERITANCE::
+   ##_base class and derived class
+     -->>derived class will inherit properties of base class
+ ##Base class--Parent class
+##derived class--child class
+1) single inheritance(ex--parent,child)
+2)multiple inheritance(ex--dad,mom,child)
+3)multi-level inheritance(ex--gp,p,c)
+4)hirerical inheritance(ex--p,c1,c2)
+5)hybrid inheritance(ex--p,c1,c2,k1,k2,kd1,kd2)
+
+
