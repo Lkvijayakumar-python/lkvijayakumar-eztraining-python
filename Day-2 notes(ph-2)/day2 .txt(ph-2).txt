@@ -1,0 +1,62 @@
+$%$%#%%------>>DAY-2 <<------%%^%&^^$%
+POLYMORPHISM::
+-->>one item or same item used for differnt purposes
+:::types:::
+1)overloading
+    a)operator overloading
+     ex: 5+10 =15-->>with  + operator
+            "5"+"10"=510-->>string concatination with + operator
+    b)method overloading
+2)over riding::
+  if a method is defective or cannot be used inside derive 
+class it will take it from its base class or parent class
+       ------@#$%%^^&&------
+:::DATA STRUCTURES:::
+# helps to write efficient programs
+# LINEAR  - array/linked list/stack/queue/matrix
+# NON-LINEAR --binary tree/heap/hash table/graph
+# linear-storing data sequently
+#non-linear--no sequential   style required
+               
+linear--static-->>arrays(size will be fixed)
+           --dynamic-->>list
+##LINKED LIST##
+ex:- train
+** as the name says list of items which are linked
+    with one another is called as linked list
+-->>types of linked list--<<
+1.singly linked list
+2.doubly linked list
+3.circular linked list
+
+## creating linked list ##
+Step1: Create the node 
+Step2: Partition the node with 2 segments data and none
+step3: Add value into the blank node
+Step4: Mark the node as head
+Step5: Create the next node by following the above steps
+Step6: Establish link between first node and second node
+
+Displaying Linked List:Traversal is required from first node till tail node in order to display
+                       existing linked list
+
+operation in linked list ::
+1.insert
+2.delete
+3.search
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
