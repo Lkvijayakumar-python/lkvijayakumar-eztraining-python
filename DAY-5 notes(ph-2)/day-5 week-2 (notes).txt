@@ -1,0 +1,167 @@
+day-5 ,phase-2 :-
+
+*****************TREE*********************
+program1:-
+class BinaryTreeNode:
+    def __init__(self,data):
+        self.data=data
+        self.leftchild=None
+        self.rightchild=None
+node1=BinaryTreeNode(50)
+node2=BinaryTreeNode(20)
+node3=BinaryTreeNode(40)
+node4=BinaryTreeNode(10)
+node5=BinaryTreeNode(12)
+node6=BinaryTreeNode(30)
+node7=BinaryTreeNode(25)
+
+node1.leftchild=node2
+node1.rightchild=node3
+node2.leftchild=node4
+node2.rightchild=node5
+node3.leftchild=node6
+node3.rightchild=node7
+
+program2:-
+class Node:
+    def __init__(self,data):
+        self.left = None
+        self.right = None
+        self.val = data
+
+def printInorder(root):
+    if root:
+        printInorder(root.left)
+        print(root.val,end=" "),
+        printInorder(root.right)
+
+def printpostorder(root):
+    if root:
+        printpostorder(root.left)
+        printpostorder(root.right)
+        print(root.val,end=" "),
+
+
+def printpreorder(root):
+    if root:
+        print(root.val,end=" "),
+        printpreorder(root.left)
+        printpreorder(root.right)
+
+root=Node(1)
+root.left=Node(2)
+root.right=Node(3)
+root.left.left=Node(4)
+root.right.right=Node(5)
+
+print("pre-order:")
+printpreorder(root)
+print()
+
+print("\n Inorder:")
+printInorder(root)
+print()
+
+print("\n post-order:")
+printpostorder(root)
+print()
+
+
+output:-
+pre-order:
+1 2 4 3 5 
+
+Inorder:
+4 2 1 3 5 
+
+post-order:
+4 2 5 3 1 
+
+
+program3:-
+
+#BST
+
+class Node:
+    def __init__(self,key):
+        self.left=None
+        self.right=None
+        self.val=key
+
+def insert(root,key):
+    if root is None:
+        return Node(key)
+    else:
+        if root.val == key:
+            return root
+        elif root.val < key:
+            root.right = insert(root.right,key)
+        else:
+            root.left = insert(root.left,key)
+    return root
+#Inorder-tranversal
+
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.val)
+        inorder(root.right)
+r=Node(50)
+r=insert(r, 30)
+r=insert(r, 20)
+r=insert(r, 40)
+r=insert(r, 70)
+r=insert(r, 60)
+r=insert(r, 80)
+inorder(r)
+
+output:-
+20
+30
+40
+50
+60
+70
+80
+
+
+
+
+print("Root Node is:")
+print(node1.data)
+
+print("left child of Node is:")
+print(node1.leftchild.data)
+
+print("right child of Node is:")
+print(node1.rightchild.data)
+
+print("left child of Node is:")
+print(node2.leftchild.data)
+
+print("right child of Node is:")
+print(node2.rightchild.data)
+
+print("left child of Node is:")
+print(node3.leftchild.data)
+
+print("right child of Node is:")
+print(node3.rightchild.data)
+
+
+
+output:-
+Root Node is:
+50
+left child of Node is:
+20
+right child of Node is:
+40
+left child of Node is:
+10
+right child of Node is:
+12
+left child of Node is:
+30
+right child of Node is:
+25

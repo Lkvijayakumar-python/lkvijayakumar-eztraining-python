@@ -1,0 +1,27 @@
+DAY 6::
+ADJACENCY:
+connection should be there
+PATH:-
+there should be a root (or) path
+
+types of graphs::-
+1)undirected graph 
+2)directed graph
+3)weighted graph
+
+## REPRESENTATION OF GRAPHS ##
+1) list of edges
+2) adjacency list
+3)adjacency matrix
+
+(BFS-breadth first search)
+** In BFS visit a vertex and visit all the  adjacent vertexes
+** whereas in DFS after visiting a vertex select one adj vertex and explore it completely and move on with other
+
+### DIJKSTRA ALGORITHM ###
+It comes under greedy method where sol for the given problem will figured out stage by stage 
+# Dijkstra algorithm helps u to findout shortest path or distances from one vertex to all the other vertices
+
+## DRAWBACKS ##
+If weight of any edge is a negative number distance wont work for that
+
